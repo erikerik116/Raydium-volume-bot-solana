@@ -83,7 +83,7 @@ npm start
 ## Author
 
 
-Telegram: [@Lamoerey](https://t.me/shiny0103)
+Telegram: [@shiny0103](https://t.me/shiny0103)
 
 
 You can always find me here, for help, or for other projects.
