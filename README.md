@@ -85,5 +85,8 @@ npm start
 
 Telegram: https://t.me/AlaMoonzzz
 
+Discord: https://discord.com/users/304228787250528256
+
+
 
 You can always find me here, for help, or for other projects.
