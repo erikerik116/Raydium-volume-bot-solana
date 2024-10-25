@@ -62,7 +62,7 @@ LOG_LEVEL=info               # Logging level (info, debug, error)
 ## Usage
 1. Clone the repository
 ```
-git clone https://github.com/AlaMoonzzz/Solana-raydium-volume-bot.git
+git clone https://github.com/erikerik116/Raydium-volume-bot-solana.git
 cd Raydium-Volume-Bot-Solana
 ```
 2. Install dependencies
@@ -83,7 +83,8 @@ npm start
 ## Author
 
 
-Telegram: https://t.me/AlaMoonzzz
+Telegram: https://t.me/Akamala88071015
+
 
 Discord: https://discord.com/users/304228787250528256
 
