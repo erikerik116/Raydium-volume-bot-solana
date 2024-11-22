@@ -268,51 +268,7 @@ const buy = async (newWallet: Keypair, baseMint: PublicKey, buyAmount: number, p
   }
 }
 
-const sell = async (poolId: PublicKey, baseMint: PublicKey, wallet: Keypair) => {
-  try {
-    const data: Data[] = readJson()
-    if (data.length == 0) {
-      await sleep(1000)
-      return null
-    }
 
-    const tokenAta = await getAssociatedTokenAddress(baseMint, wallet.publicKey)
-    const tokenBalInfo = await solanaConnection.getTokenAccountBalance(tokenAta)
-    if (!tokenBalInfo) {
-      console.log("Balance incorrect")
-      return null
-    }
-    const tokenBalance = tokenBalInfo.value.amount
-
-    try {
-      let sellTx;
-      if (SWAP_ROUTING)
-        sellTx = await getSellTxWithJupiter(wallet, baseMint, tokenBalance)
-      else
-        sellTx = await getSellTx(solanaConnection, wallet, baseMint, NATIVE_MINT, tokenBalance, poolId.toBase58())
-
-      if (sellTx == null) {
-        console.log(`Error getting buy transaction`)
-        return null
-      }
-
-      const latestBlockhashForSell = await solanaConnection.getLatestBlockhash()
-      const txSellSig = await execute(sellTx, latestBlockhashForSell, false)
-      const tokenSellTx = txSellSig ? `https://solscan.io/tx/${txSellSig}` : ''
-      const solBalance = await solanaConnection.getBalance(wallet.publicKey)
-      editJson({
-        pubkey: wallet.publicKey.toBase58(),
-        tokenSellTx,
-        solBalance
-      })
-      return tokenSellTx
-    } catch (error) {
-      return null
-    }
-  } catch (error) {
-    return null
-  }
-}
 
 
 main()
