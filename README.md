@@ -3,6 +3,12 @@
 This bot is designed to automate the distribution of SOL to multiple wallets and execute endless buy and sell swap transactions simultaneously on the Raydium platform. It leverages Solana's blockchain technology to perform these operations efficiently.
 
 ## This product is trying to show the basic functions of volume bot, and not suitable for big live tokens. So, if you want better version, you can refer to version 2 in my github.
+## Running
+![raydium-volume-1](https://github.com/user-attachments/assets/ca150831-4ebf-4cd4-b95f-95c594385923)
+
+![raydium-volume-2](https://github.com/user-attachments/assets/ebfcc9f7-cb29-4e51-aac0-b776541e662f)
+
+![raydium-volume-3](https://github.com/user-attachments/assets/ff09cc8c-7a48-4204-94f8-d99943e94e2f)
 
 ## Features
 
@@ -83,10 +89,10 @@ npm start
 ## Author
 
 
-Telegram: https://t.me/Akamala88071015
+Telegram: @TomySOL
 
 
-Discord: https://discord.com/users/304228787250528256
+Discord: @adelo_8
 
 
 
