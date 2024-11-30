@@ -89,10 +89,10 @@ npm start
 ## Author
 
 
-Telegram: @TomySOL
+Telegram: @erikerik116
 
 
-Discord: @adelo_8
+Discord: @erikerik116
 
 
 
